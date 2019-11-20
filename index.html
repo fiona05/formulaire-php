@@ -35,7 +35,45 @@
         <div class="container-fluid">
             <div class="container">
                 <div class="row">
-
+                    <h1>Contact</h1>
+                    <h2>Un projet, une offre, besoin d'informations comlémentaires, conactez-moi:</h2>
+                        <form name="myForm" method="post" action="saisie.php">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="title" value="mr"/>Monsieur<br>
+                                <input class="form-check-input" type="radio" name="title" value="mme"/>Madame<br>
+                            </div>
+                            <div class="form-group">
+                                <label for="surname">Nom:</label>
+                                <input type="text" id="surname" class="form-control" placeholder="Entrez votre nom">
+                            </div>
+                            <div class="form-group">
+                                <label for="firstname">Prénom:</label>
+                                <input type="text" id="surname" class="form-control" placeholder="Entrez votre prénom">
+                            </div>
+                            <div class="form-group">
+                                    <label for="society">Société:</label>
+                                    <input type="text" id="society" class="form-control" placeholder="Entrez votre nom de société">
+                                </div>
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="text" id="email" class="form-control" placeholder="Entrez votre email">
+                            </div>
+                            <select class="form-control" name="subject">
+                                <option value="job">proposition d'emploi</option>
+                                <option value="project">proposition de projet</option>
+                                <option value="info">demande d'informations complémentaires</option>
+                                <option value="other">autre</option>
+                            </select>
+                            <div class="form-group">
+                                <label for="file">Joindre un fichier:</label>
+                                <input type="file" class="form-control-file" id="file-input">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea class="form-control" id="message" rows="6" placeholder="Entrez votre message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
                 </div>
             </div>
         </div>
